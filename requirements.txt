@@ -1,0 +1,6 @@
+torch
+torchvision
+visdom
+imageio
+PIL
+collections
