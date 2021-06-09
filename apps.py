@@ -76,8 +76,10 @@ class App(object):
                 cur_losses_3 = OrderedDict()
                 cur_losses_1['dis_fake'] = cur_losses['dis_fake']
                 cur_losses_1['dis_real'] = cur_losses['dis_real']
-                cur_losses_2['dis_real_aus'] = cur_losses['dis_real_aus']
-                cur_losses_3['gen_rec'] = cur_losses['gen_rec']
+                cur_losses_2['dis_real_aus_1'] = cur_losses['dis_real_aus']
+                cur_losses_2['dis_real_aus_2'] = cur_losses['dis_real_aus']
+                cur_losses_3['gen_rec_1'] = cur_losses['gen_rec']
+                cur_losses_3['gen_rec_2'] = cur_losses['gen_rec']
                 self.visual.display_current_losses_1(epoch - 1, epoch_steps / len(self.train_dataset), cur_losses_1)
                 self.visual.display_current_losses_2(epoch - 1, epoch_steps / len(self.train_dataset), cur_losses_2)
                 self.visual.display_current_losses_3(epoch - 1, epoch_steps / len(self.train_dataset), cur_losses_3)
